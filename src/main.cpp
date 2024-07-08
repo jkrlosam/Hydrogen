@@ -73,7 +73,7 @@ int main(){
     
     std::cout<<"Inner Product: "<<integral.integration(norm)<<'\n';
 
-    std::cout<<"Angular l=5, m=-4: \t" <<wf.wave_function_theta(1.645)<<'\n';
+    std::cout<<"Angular l=6, m=-1: \t" <<wf.wave_function_theta(1.645)<<'\n';
 
     file_wf_radial(wf,output_file+".r_wf");
     file_wf_theta(wf,output_file+".th_wf");
