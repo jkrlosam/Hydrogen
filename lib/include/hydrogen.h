@@ -1,4 +1,5 @@
 #pragma once
+#include <complex>
 
 
 //* Hydrogen atom (energies and normalized eigenstates)
@@ -44,5 +45,7 @@ class Hydrogen{
 
         //* Whole wave function!
         double wave_function(const double r, const double th,const double ph,const bool real_part) const; //* normalized wave function
+        std::complex<double> wave_function(const double r, const double th,const double ph) const;
+
 };
 

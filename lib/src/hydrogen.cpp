@@ -34,6 +34,9 @@ double Hydrogen::wave_function(const double r, const double th,const double ph,c
 
 }
 
+std::complex<double> Hydrogen::wave_function(const double r, const double th,const double ph) const{
+    return wave_function_radial(r)*wave_function_theta(th)*std::complex<double>(cos(m*ph),sin(m*ph));
+}
 
 
 
